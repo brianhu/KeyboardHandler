@@ -36,6 +36,7 @@
         }
         
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
+        singleTap.cancelsTouchesInView = NO;
         [vc.view addGestureRecognizer:singleTap];
         
         targetView = vc.view;
